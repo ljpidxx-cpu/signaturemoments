@@ -1,0 +1,52 @@
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:#fff;
+  color:#111;
+}
+
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:25px 60px;
+  border-bottom:1px solid #ddd;
+}
+
+
+.hero {
+  text-align:center;
+  padding:100px 20px;
+}
+
+
+.hero h1 {
+  font-size:60px;
+}
+
+
+.products {
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:50px;
+}
+
+
+.card {
+  width:280px;
+  padding:30px;
+  border-radius:25px;
+  box-shadow:0 10px 30px #ddd;
+  text-align:center;
+}
+
+
+button {
+  background:black;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:30px;
+  cursor:pointer;
+}
