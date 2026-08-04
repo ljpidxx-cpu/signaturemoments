@@ -1,10 +1,21 @@
-export default function ProductCard({product}) {
+"use client";
 
-return (
+import {useContext} from "react";
+import {CartContext} from "./CartContext";
+
+
+export default function ProductCard({product}){
+
+const {addToCart}=useContext(CartContext);
+
+
+return(
 
 <div className="card">
 
-<h2>{product.name}</h2>
+<h2>
+{product.name}
+</h2>
 
 <p>
 {product.description}
@@ -14,9 +25,13 @@ return (
 ${product.price}
 </h3>
 
-<button>
+
+<button
+onClick={()=>addToCart(product)}
+>
 Add To Cart
 </button>
+
 
 </div>
 
